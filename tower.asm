@@ -94,15 +94,6 @@ asm_main:
   mov [ecx + 4], edx   
   mov [ecx], eax  
 
-;  mov eax, peg2 
-;  push eax  
-;  mov eax, dword [num_peg]
-;  push eax            
-;  call showp 
-;  pop eax
-;  pop eax
-;  call read_char
-
   end_swap_loop:
   add ecx, 4  
   jmp swapfirst  
@@ -144,15 +135,6 @@ tower:
   pop ebx
   pop ecx
 
-;  mov eax, peg2
-;  push eax
-;  mov eax, dword [num_peg]
-;  push eax
-;  call showp
-;  pop eax
-;  pop eax
-;  call read_char
-
   swaploop:       
   cmp ebx, 1
   je endloop
@@ -166,7 +148,6 @@ tower:
   mov [ecx + 4], edx  
   mov [ecx], eax
 
-;  mov eax, peg2
   endloop:
 
   mov eax, peg2
